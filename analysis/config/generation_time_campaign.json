@@ -1,0 +1,56 @@
+{
+  "schema_version": 4,
+  "description": "Separate performance campaign (warm-cache generation times). Results: analysis/results/data/generation_time_by_design.csv; summary: analysis/scripts/report_generation_times.py.",
+  "cities": [
+    {"city": "Casablanca", "country": "Morocco"},
+    {"city": "Madrid", "country": "Spain"},
+    {"city": "Paris", "country": "France"},
+    {"city": "Shenzhen", "country": "China"}
+  ],
+  "customer_station_pairs": [
+    {"n_customers": 200, "n_stations_spec": 60}
+  ],
+  "customer_sizes": [200],
+  "station_levels": [60],
+  "customer_patterns": ["c", "r", "rc"],
+  "time_window_tightness": ["medium"],
+  "seeds": [10001, 10002, 10003, 10004, 10005],
+  "variants": ["classic_evrptw", "multi_depot_evrptw", "two_echelon_evrp"],
+  "num_additional_depots": [2],
+  "num_satellites": [4],
+  "ofat": {
+    "enabled": false,
+    "baseline_pair": {"n_customers": 200, "n_stations_spec": 60},
+    "freeze_for_scale_table": {
+      "customer_pattern": "rc",
+      "time_window_tightness": "medium"
+    },
+    "freeze_for_pattern_sweep": {"time_window_tightness": "medium"},
+    "freeze_for_tw_sweep": {"customer_pattern": "rc"},
+    "customer_patterns_sweep": ["c", "r", "rc"],
+    "time_window_sweep": ["medium"]
+  },
+  "main_campaign": {
+    "node_elevation_provider": "srtm",
+    "compute_matrices": true,
+    "run_energy_feasibility": true,
+    "example_seed": 10042,
+    "example_cities": ["Casablanca", "Paris"],
+    "example_num_customers": 200,
+    "example_num_stations": 60,
+    "example_pattern": "rc",
+    "example_time_window_tightness": "medium"
+  },
+  "elevation_sensitivity": {
+    "enabled": false,
+    "subset_cities": ["Paris"],
+    "n_customers_only": 200,
+    "n_stations_spec": 60,
+    "node_elevation_alternatives": ["none", "srtm"]
+  },
+  "matrix_sensitivity": {
+    "enabled": false,
+    "sizes": [200],
+    "n_stations_spec": 60
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "default": {
+    "green_carbon_intensity": 0.1,
+    "non_green_carbon_intensity": 0.5,
+    "price_fast_per_kWh": 0.35,
+    "price_normal_per_kWh": 0.25,
+    "slot_defaults": {
+      "fast": 4,
+      "normal": 2
+    }
+  },
+  "Spain": {
+    "green_carbon_intensity": 0.08,
+    "non_green_carbon_intensity": 0.42,
+    "price_fast_per_kWh": 0.52,
+    "price_normal_per_kWh": 0.36,
+    "slot_defaults": {
+      "fast": 4,
+      "normal": 2
+    },
+    "cities": {
+      "Madrid": {
+        "price_fast_per_kWh": 0.55,
+        "price_normal_per_kWh": 0.38
+      },
+      "Barcelona": {
+        "price_fast_per_kWh": 0.54,
+        "price_normal_per_kWh": 0.37
+      },
+      "Valencia": {
+        "price_fast_per_kWh": 0.51,
+        "price_normal_per_kWh": 0.35
+      }
+    }
+  },
+  "Morocco": {
+    "green_carbon_intensity": 0.12,
+    "non_green_carbon_intensity": 0.55,
+    "price_fast_per_kWh": 0.32,
+    "price_normal_per_kWh": 0.22,
+    "slot_defaults": {
+      "fast": 3,
+      "normal": 2
+    },
+    "cities": {
+      "Casablanca": {
+        "price_fast_per_kWh": 0.34,
+        "price_normal_per_kWh": 0.23
+      },
+      "Rabat": {
+        "price_fast_per_kWh": 0.33,
+        "price_normal_per_kWh": 0.22
+      },
+      "Marrakesh": {
+        "price_fast_per_kWh": 0.35,
+        "price_normal_per_kWh": 0.24
+      }
+    }
+  },
+  "Italy": {
+    "green_carbon_intensity": 0.07,
+    "non_green_carbon_intensity": 0.4,
+    "price_fast_per_kWh": 0.5,
+    "price_normal_per_kWh": 0.34,
+    "slot_defaults": {
+      "fast": 4,
+      "normal": 2
+    },
+    "cities": {
+      "Rome": {
+        "price_fast_per_kWh": 0.53,
+        "price_normal_per_kWh": 0.36
+      },
+      "Milan": {
+        "price_fast_per_kWh": 0.52,
+        "price_normal_per_kWh": 0.35
+      },
+      "Naples": {
+        "price_fast_per_kWh": 0.49,
+        "price_normal_per_kWh": 0.33
+      }
+    }
+  }
+}

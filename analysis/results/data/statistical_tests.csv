@@ -1,0 +1,13 @@
+test,n,statistic,pvalue,adjusted_p,effect_size,effect_size_name,paired_median_difference,note
+kruskal_median_distance_ratio_by_city,160,126.18351346005932,3.592868542986441e-27,3.592868542986441e-27,0.789637906795252,epsilon_squared,,Instance-level median d_road/d_geo.
+friedman_customer_NND_c_r_rc,40,80.0,4.248354255291595e-18,,1.0,kendall_w,,Matched classic EVRPTW triples (city + seed + size).
+wilcoxon_c_vs_r_NND,40,0.0,1.8189894035458565e-12,5.4569682106375694e-12,-1.0,rank_biserial_r,-1644.357173540004,Clustered vs Dispersed
+wilcoxon_c_vs_rc_NND,40,0.0,1.8189894035458565e-12,5.4569682106375694e-12,-1.0,rank_biserial_r,-323.0737252196415,Clustered vs Mixed
+wilcoxon_r_vs_rc_NND,40,0.0,1.8189894035458565e-12,5.4569682106375694e-12,1.0,rank_biserial_r,1311.1826935583922,Dispersed vs Mixed
+kruskal_median_relative_asymmetry_by_city,160,128.00648983628173,1.4542994087881794e-27,1.4542994087881794e-27,0.8013236527966777,epsilon_squared,,Instance median relative asymmetry A_ij.
+bootstrap_median_mismatch_rate,160,0.15000000000000002,nan,,,,,95% CI 0.1375–0.1625 (instance-level).
+kruskal_mismatch_rate_by_city,160,25.819210355939333,1.040586921169836e-05,1.040586921169836e-05,0.14627698946114956,epsilon_squared,,
+bootstrap_median_time_ratio,160,1.2389446182979438,nan,,,,,95% CI 1.2336–1.2496.
+kruskal_median_time_ratio_by_city,160,123.94643709482473,1.0899151321872361e-26,1.0899151321872361e-26,0.7752976736847739,epsilon_squared,,
+bootstrap_median_energy_ratio,160,1.2503387538945923,nan,,,,,95% CI 1.2343–1.2625.
+kruskal_median_energy_ratio_by_city,160,139.0110159323151,6.1758571050853664e-30,6.1758571050853664e-30,0.8718654867456096,epsilon_squared,,

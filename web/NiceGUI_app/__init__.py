@@ -1,0 +1,1 @@
+"""NiceGUI EVRP benchmark wizard."""

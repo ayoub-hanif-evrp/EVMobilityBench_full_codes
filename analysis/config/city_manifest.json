@@ -1,0 +1,8 @@
+{
+  "cities": [
+    {"city": "Casablanca", "country": "Morocco"},
+    {"city": "Madrid", "country": "Spain"},
+    {"city": "Paris", "country": "France"},
+    {"city": "Shenzhen", "country": "China"}
+  ]
+}

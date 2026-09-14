@@ -1,0 +1,54 @@
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python
+__pycache__/
+**/__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+dist/
+build/
+
+# Testing / tooling
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Jupyter
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# OSM / runtime cache (local only)
+cache/
+**/cache/
+analysis/cache/
+
+# Web app generated map HTML
+web/NiceGUI_app/map_cache/
+
+# Example export outputs (regenerate locally)
+benchmark_export_csv/
+benchmark_export_json/
+notebooks/benchmark_export_*/
+
+# IDE / editor
+.cursor/
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Environment secrets
+.env
+.env.*
+
+# Local manuscript draft (keep on disk; do not publish)
+EVMobilityBench_paper_IJST.docx

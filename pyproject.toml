@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "evrp-benchmark"
+version = "1.1.0"
+description = "Road-network-grounded benchmark generation and evaluation for electric vehicle routing on OSM urban graphs."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "Ayoub Hanif" },
+  { name = "Mohamed Tabaa" },
+  { name = "Hassna Bensag" },
+  { name = "Mohamed Youssfi" },
+]
+keywords = ["EVRP", "benchmark", "OSMnx", "electric vehicle routing", "instance generation", "road-network-grounded"]
+dependencies = [
+  "osmnx>=1.9.0",
+  "networkx>=3.2.1",
+  "numpy>=1.26.0",
+  "pandas>=2.2.0",
+  "geopandas>=0.14.0",
+  "pyarrow>=14.0.0",
+  "shapely>=2.0.0",
+  "scikit-learn>=1.4.0",
+  "python-srtm>=0.5.0",
+  "pydeck>=0.8.0",
+  "nicegui>=2.0.0",
+  "starlette<1.0",
+]
+
+[project.optional-dependencies]
+notebook = ["ipykernel>=6.29.0", "jupyterlab>=4.0.0", "matplotlib>=3.8.0", "folium>=0.17.0"]
+analysis = ["scipy>=1.10.0", "matplotlib>=3.8.0", "pandas>=2.2.0", "pyproj>=3.5.0"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"evrp_instance_generator_framework.data" = ["countries_data.json"]

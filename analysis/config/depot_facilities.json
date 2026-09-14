@@ -1,0 +1,31 @@
+{
+  "schema_version": 1,
+  "elevation_provider_used": "srtm",
+  "generated_utc": "2026-05-01T11:54:47.656331+00:00",
+  "locations": [
+    {
+      "city": "Casablanca",
+      "country": "Morocco",
+      "depot_lat": 33.5666533,
+      "depot_lon": -7.59700955
+    },
+    {
+      "city": "Madrid",
+      "country": "Spain",
+      "depot_lat": 40.44302355,
+      "depot_lon": -3.67854795
+    },
+    {
+      "city": "Paris",
+      "country": "France",
+      "depot_lat": 48.85888385,
+      "depot_lon": 2.3212658
+    },
+    {
+      "city": "Shenzhen",
+      "country": "China",
+      "depot_lat": 22.65150425,
+      "depot_lon": 114.18039045
+    }
+  ]
+}

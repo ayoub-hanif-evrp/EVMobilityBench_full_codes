@@ -1,0 +1,49 @@
+{
+  "schema_version": 2,
+  "analysis_seed": 20260824,
+  "bootstrap_seed": 20260824,
+  "bootstrap_resamples": 10000,
+  "time_window_tightness": "medium",
+  "energy_period": "off_peak",
+  "node_elevation_provider": "srtm",
+  "compute_matrices": true,
+  "run_energy_feasibility": true,
+  "osm_cache_dir": "analysis/cache",
+  "depot_facilities_json": "analysis/config/depot_facilities.json",
+  "num_additional_depots": 2,
+  "num_satellites": 3,
+  "profiles": {
+    "quick": {
+      "cities": ["Casablanca", "Paris"],
+      "n_customers": 20,
+      "n_stations": 6,
+      "patterns": ["rc"],
+      "instance_seeds": [10001, 10002],
+      "variants_structural": ["classic_evrptw"],
+      "variants_cross": [],
+      "cross_seeds": []
+    },
+    "paper": {
+      "cities": ["Casablanca", "Madrid", "Paris", "Shenzhen"],
+      "n_customers": 80,
+      "n_stations": 20,
+      "patterns": ["c", "r", "rc"],
+      "instance_seeds": [10001, 10002, 10003, 10004, 10005, 10006, 10007, 10008, 10009, 10010],
+      "variants_structural": ["classic_evrptw"],
+      "variants_cross": ["classic_evrptw", "multi_depot_evrptw", "two_echelon_evrp"],
+      "cross_pattern": "rc",
+      "cross_seeds": [10001, 10002, 10003, 10004, 10005]
+    },
+    "extended": {
+      "cities": ["Casablanca", "Madrid", "Paris", "Shenzhen"],
+      "n_customers": 100,
+      "n_stations": 25,
+      "patterns": ["c", "r", "rc"],
+      "instance_seeds": [10001, 10002, 10003, 10004, 10005, 10006, 10007, 10008, 10009, 10010, 10011, 10012, 10013, 10014, 10015, 10016, 10017, 10018, 10019, 10020],
+      "variants_structural": ["classic_evrptw"],
+      "variants_cross": ["classic_evrptw", "multi_depot_evrptw", "two_echelon_evrp"],
+      "cross_pattern": "rc",
+      "cross_seeds": [10001, 10002, 10003, 10004, 10005]
+    }
+  }
+}
